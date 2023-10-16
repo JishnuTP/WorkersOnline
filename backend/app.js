@@ -20,7 +20,7 @@ app.use(cors());
 app.use(bodyParser.json({ limit: '1000mb' }));
 app.use(bodyParser.urlencoded({ limit: '1000mb', extended: true }));
 app.use('/public', express.static(path.join(__dirname, 'public')))
-const userController = require('./Controllers/UserController')
+const userController = require('./Controllers/userController')
 
 
 
